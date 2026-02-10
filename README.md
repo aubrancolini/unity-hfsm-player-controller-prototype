@@ -42,7 +42,7 @@ Although developed in a game context, this project focuses on general software e
 - Grounded and airborne movement separation
 - Jump buffering
 - Coyote time
-- Variable jump height (jump hold \& jump cut)
+- Variable jump height (jump hold and jump cut)
 - Air jumps with configurable limits
 - Multiple gravity phases (ascending, falling)
 - Horizontal control interpolation while airborne
@@ -55,8 +55,8 @@ Although developed in a game context, this project focuses on general software e
 
 ## Architecture Notes
 
-- \*\*HFSM\*\* is used to express gameplay states explicitly rather than relying on conditional logic.
-- \*\*PlayerContext\*\* centralizes runtime state and configuration shared across all states.
+- **HFSM** is used to express gameplay states explicitly rather than relying on conditional logic.
+- **PlayerContext** centralizes runtime state and configuration shared across all states.
 - States are responsible only for:
   - state-specific transitions
   - movement and physics behavior relevant to that state
@@ -69,7 +69,7 @@ Although developed in a game context, this project focuses on general software e
 
 ## Scope
 
-This repository is a \*\*learning and architecture prototype\*\*, not a production-ready character controller.
+This repository is a **learning and architecture prototype**, not a production-ready character controller.
 A future project will revisit the same problem space with:
 
 - a different HFSM framework
@@ -92,7 +92,7 @@ A future project will revisit the same problem space with:
 
 ## Third-Party Libraries
 
-This project uses the \*\*Unity Hierarchical State Machine\*\* framework by Adam Myhre:
+This project uses the **Unity Hierarchical State Machine** framework by Adam Myhre:
 https://github.com/adammyhre/Unity-Hierarchical-StateMachine
 The framework was used as-is to explore HFSM-based gameplay architecture and state composition.
 
