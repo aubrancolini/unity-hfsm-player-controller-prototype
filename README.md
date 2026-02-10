@@ -36,8 +36,8 @@ Although developed in a game context, this project focuses on general software e
 ## Implemented Systems
 
 - Hierarchical Finite State Machine (HFSM)
-&nbsp; - Root → Grounded / Airborne
-&nbsp; - Nested states for movement and jump phases
+  - Root → Grounded / Airborne
+  - Nested states for movement and jump phases
 
 - Grounded and airborne movement separation
 - Jump buffering
@@ -58,8 +58,8 @@ Although developed in a game context, this project focuses on general software e
 - \*\*HFSM\*\* is used to express gameplay states explicitly rather than relying on conditional logic.
 - \*\*PlayerContext\*\* centralizes runtime state and configuration shared across all states.
 - States are responsible only for:
-&nbsp; - state-specific transitions
-&nbsp; - movement and physics behavior relevant to that state
+  - state-specific transitions
+  - movement and physics behavior relevant to that state
 
 - Unity-specific concerns (input, grounding, movement application) are handled outside the state machine.
 
